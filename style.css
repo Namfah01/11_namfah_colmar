@@ -53,7 +53,6 @@ nav a {
 .logo > span {
     font-weight: 400;
     color:rgb(161, 161, 161);
-    
 }
 
 .mobile-nav{
@@ -66,7 +65,7 @@ nav a {
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-   padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .hero-left img{
