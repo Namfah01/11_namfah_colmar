@@ -124,7 +124,8 @@ button {
 .information-left {
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 2rem;
+    width: 60%;
 }
 
 .information-left img{
@@ -132,22 +133,22 @@ button {
 
 }
 
-.information-2-left {
-    padding-bottom: 2%;
-}
+
 
 .information-2-left h2, p {
-    padding: 2%;
+    padding: 1.2rem;
 }
 
 .information-2-left p {
     font-size: 1rem;
+    font-style: var(grey);
 }
 
 /*** Right ***/
 .information-right {
     display: flex;
     flex-direction: column;
+    width:40%
 }
 
 .oreintation > p {
@@ -173,45 +174,60 @@ button {
 
 .information-2-right, .campus, .guest {
     display:flex;
-    border: 1px solid rgb(220, 219, 219);
-    padding: 2%;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 4%;
 }
 
 .orentation-info, .campus-info, .guest-info {
-    padding: 0 5%; 
+   padding: 0 5%; 
    margin-top: 4%;
    font-size: 0.8rem;
 }
 
-.orientation-info > *, .campus-info > *, .guest-info > * {
+.orientation-info , .campus-info , .guest-info  {
     padding: 2% 0;
+    font-display: flex;
+    
  }
 
- .guest {
-    background-color:darkgrey;
-    margin: 0 0 2% 0;
-    padding: 0.5rem;
+ .information-2-right:hover {
+    background-color: rgb(196, 195, 195);
+}
+ .campus:hover {
+    background-color: rgb(196, 195, 195);
+}
+ .guest:hover {
+    background-color: rgb(196, 195, 195);
 }
 
+
 /**** Hide mobile images ****/
-.img12, .img22, .img32 { 
+ .img12, .img22, .img32 {
     display: none;
 }
 
 /**** course ****/
 
+h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
 
 .course {
-    padding: 3rem;
+    padding: 2.5rem;
+    background-color: rgb(220, 220, 220);
 }
 
 .course-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: rem;
-    margin left: 4.5rem ;
-    margin  top
+    padding: 2rem;
+
 }
 
 .c1, .c2, .c3, .c4, .c5, .c6 {
@@ -219,15 +235,34 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: flex;
-    padding: 0rem
 }
 
 .course img {
-    width: 20rem;
+    width: 100%;
 }
 .c1, .c2, .c3, .c4, .c5, .c6  {
     background-color: rgb(240, 240, 240);
+    font-size: 1rem;
 
+}
+
+.c1:hover {
+    background-color: rgb(196, 195, 195);
+}
+.c2:hover {
+    background-color: rgb(196, 195, 195);
+}
+.c3:hover {
+    background-color: rgb(196, 195, 195);
+}
+.c4:hover {
+    background-color: rgb(196, 195, 195);
+}
+.c5:hover {
+    background-color: rgb(196, 195, 195);
+}
+.c6:hover {
+    background-color: rgb(196, 195, 195);
 }
 
 
@@ -237,15 +272,94 @@ button {
 }
 
 
-
 .c-mobile {
     display: none;
 }
 
+/* Thesis section */
+
+.thesis {
+    background-color:rgb(233, 233, 233)
+}
+
+.thesis > h1 {
+    color: rgb(97, 97, 97);
+    text-align: center;
+    padding: 2rem;
+}
+
+.thesis-detail     {
+    display: grid;
+grid-template-columns: 3fr 2fr;
+}
+
+.thesis-mv {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.mv > video {
+    width: 100%;
+}
+
+.thesis-info > h4 {
+    font-size: 1.2rem;
+}
+
+.thesis-figma { 
+    display: flex;
+    flex-direction: column;
+}
+
+.fisma {
+    display: flex;
+    padding: 5%;
+}
+
+.fisma:hover {
+    background-color: rgb(217, 217, 217);
+}
+
+.thesis-figma img {
+    width: 10rem;
+}
+
+.now-and-then {
+    display: flex;
+    padding: 5%;
+}
+.now-and-then:hover {
+        background-color: rgb(217, 217, 217);
+    }
 
 
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--light-grey);
+    margin-bottom: 1%;
+}
 
+footer > * {
+    font-size:small;
+    color: var(--dark-grey);
+    margin-top: 0;
+    padding-top: 2%;
+}
 
+footer ul {
+    display: flex;
+    list-style: none;
+}
 
+footer a {
+    text-decoration: none;
+    color: var(--dark-grey)
+}
+
+footer li {
+    padding: 0 1em;
+}
 
