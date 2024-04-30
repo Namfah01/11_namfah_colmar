@@ -11,6 +11,7 @@
     --color:rgb(226, 226, 226);
 }
 
+
 nav {
     display:flex;
     justify-content: space-between;
@@ -33,21 +34,20 @@ nav li {
 
 nav a {
     text-decoration:none;
-    color: var(--Darkgrey);    
+    color: var(--Darkgrey);
 }
 
 .logo{
     display:flex;
     align-items: center;
     text-transform: uppercase;
-    font: size 1.2rem;
+    font-size:1.2rem;
 }
 
 .logo > p {
-
     display: inline;
-    font-wegith:Bold;
-    color:rgb(56, 55, 55);    
+    font-wegith: bold;
+    color:rgb(56, 55, 55);
 }
 
 .logo > span {
@@ -55,8 +55,8 @@ nav a {
     color:rgb(161, 161, 161);
 }
 
-.mobile-nav{
-    display:none;
+.mobile-nav {
+    display: none;
 }
 
 .hero {
@@ -69,15 +69,18 @@ nav a {
 }
 
 .hero-left img{
-    width:60%;
+    width: 85%;
 }
 
 .hero-right {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 1%;
-    padding: 0 2%;
+    margin: 2 1%;
+    padding: 2 2%;
+}
+.hero-right > h1, h4 {
+    padding: 3%;
 }
 
 /*.hero-right > h1, h4 {
@@ -95,12 +98,153 @@ nav a {
 .hero-right h4 {font-size: 1rem;}
 
 button {
-    background-color: var(--dark-grey);
+    background-color:rgba(21, 22, 22, 0.63);
     width: 100%;
     height: 2rem;
+    padding-top: 0.5;
     cursor: pointer;
-    color: rgb(47, 45, 45);
+    color: rgb(244, 242, 242);
 }
+.hero-right h3 {
+    color: aliceblue; font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/*** section2 ***/
+
+.information {
+    display: flex;
+    justify-content: center;
+    color:rgb(26, 28, 28)
+}
+
+/*** left ***/
+
+.information-left {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.information-left img{
+    width: 100%;
+
+}
+
+.information-2-left {
+    padding-bottom: 2%;
+}
+
+.information-2-left h2, p {
+    padding: 2%;
+}
+
+.information-2-left p {
+    font-size: 1rem;
+}
+
+/*** Right ***/
+.information-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.oreintation > p {
+    font-size: 0.8rem;
+}
+
+.information-right img {
+    width: 10rem;
+}
+
+.information-right h4 {
+    font-size: 1.2rem;
+}
+
+.information-right button{
+    background: none;
+    border: 0;
+}
+
+.information-right a{
+    text-decoration: none;
+}
+
+.information-2-right, .campus, .guest {
+    display:flex;
+    border: 1px solid rgb(220, 219, 219);
+    padding: 2%;
+}
+
+.orentation-info, .campus-info, .guest-info {
+    padding: 0 5%; 
+   margin-top: 4%;
+   font-size: 0.8rem;
+}
+
+.orientation-info > *, .campus-info > *, .guest-info > * {
+    padding: 2% 0;
+ }
+
+ .guest {
+    background-color:darkgrey;
+    margin: 0 0 2% 0;
+    padding: 0.5rem;
+}
+
+/**** Hide mobile images ****/
+.img12, .img22, .img32 { 
+    display: none;
+}
+
+/**** course ****/
+
+
+.course {
+    padding: 3rem;
+}
+
+.course-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: rem;
+    margin left: 4.5rem ;
+    margin  top
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: flex;
+    padding: 0rem
+}
+
+.course img {
+    width: 20rem;
+}
+.c1, .c2, .c3, .c4, .c5, .c6  {
+    background-color: rgb(240, 240, 240);
+
+}
+
+
+.course-info > p {
+    font-size: 0.8rem;
+    color:rgb(137, 141, 141);
+}
+
+
+
+.c-mobile {
+    display: none;
+}
+
+
+
+
 
 
 
